@@ -13,6 +13,7 @@ func maxSubArray(nums []int) int {
 				res = temp
 			}
 		} else {
+			temp = 0
 			if res < value {
 				res = value
 			}
