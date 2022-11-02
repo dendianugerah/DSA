@@ -2,21 +2,21 @@ package main
 
 import "fmt"
 
-func firstUniqChar(s string) int {
+func firstUniqChar(s string) byte {
 	m := make(map[rune]int)
 
 	for _, val := range s {
 		m[val]++
 	}
 
-	for i, c := range s {
-		if m[c] == 1 {
-			return i
+	for _, c := range s {
+		if m[c] == 2 {
+			return byte(c)
 		}
 	}
-	return -1
+	return 0
 }
 
 func main() {
-	fmt.Println(firstUniqChar("loveleetcode"))
+	fmt.Println(firstUniqChar("abccbaacz"))
 }
