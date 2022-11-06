@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func compareTriplets(a []int32, b []int32) []int32 {
+	result := []int32{}
+	result = append(result, 0, 0)
+	for i := 0; i < len(a); i++ {
+		if a[i] == b[i] {
+			continue
+		}
+		if a[i] > b[i] {
+			result[0]++
+		} else {
+			result[1]++
+		}
+	}
+	return result
+}
+
+func main() {
+	fmt.Println(compareTriplets([]int32{17, 28, 30}, []int32{99, 16, 8}))
+}
