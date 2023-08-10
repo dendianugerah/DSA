@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func birthdayCakeCandles(candles []int32) int32 {
 	// Write your code here
 	max := candles[0]
@@ -18,8 +16,4 @@ func birthdayCakeCandles(candles []int32) int32 {
 		}
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(birthdayCakeCandles([]int32{1, 1, 0, -1, -1}))
 }

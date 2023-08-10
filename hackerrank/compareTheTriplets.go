@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func compareTriplets(a []int32, b []int32) []int32 {
 	result := []int32{}
 	result = append(result, 0, 0)
@@ -16,8 +14,4 @@ func compareTriplets(a []int32, b []int32) []int32 {
 		}
 	}
 	return result
-}
-
-func main() {
-	fmt.Println(compareTriplets([]int32{17, 28, 30}, []int32{99, 16, 8}))
 }
